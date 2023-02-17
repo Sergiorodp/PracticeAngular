@@ -1,1 +1,6 @@
-<h1>{{ Title }}</h1>
+<ng-template *ngIf="product">
+    <h1>{{ product.title }}</h1>
+</ng-template>
+<ng-template *ngIf="!product">
+    <h1>No hay product</h1>
+</ng-template> <!--No genera un div en la vista, solo lo encapsula-->

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Product } from 'src/app/models/product.model';
 
 @Component({
   selector: 'app-product',
@@ -7,5 +7,10 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent {
-  @Input() Title: string = '';
+  @Input() product: Product = {
+    title: '',
+    price: 0,
+    images: [],
+    id: 0
+  };
 }
